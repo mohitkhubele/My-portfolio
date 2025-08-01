@@ -6,104 +6,171 @@
   <title>Mohit Khubele – Resume</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0 auto;
       max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-      background: #f7f7f7;
-      color: #333;
+      padding: 30px 10px 60px 10px;
+      background: #f5f7fa;
+      color: #2a2a2a;
     }
-    h1, h2 {
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 5px;
+    header {
+      border-bottom: 3px solid #4a90e2;
+      margin-bottom: 20px;
+      padding-bottom: 18px;
     }
+    h1 { font-size: 2.3rem; margin: 0 0 7px 0;}
+    .subtitle {font-size: 1.2rem; color: #4a90e2;}
+    .contact, .location, .linkedin {
+      margin-top: 8px;
+      font-size: 1rem;
+    }
+    .linkedin a, a { color: #2a78d2; text-decoration: none;}
     .section {
-      margin-bottom: 2rem;
+      margin-bottom: 2.3rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #e5e9ef;
     }
-    ul {
-      padding-left: 1.2rem;
+    h2 {
+      color: #396ba8;
+      margin-top: 0;
+      font-size: 1.35rem;
+      letter-spacing: 0.5px;
     }
-    .contact, .location {
-      font-weight: bold;
+    .role-block {margin-bottom: 1.5rem;}
+    .job-title {font-weight: bold; color: #353a48;}
+    .job-company {font-size: 1.07rem; color: #185e98;}
+    .job-duration {font-size: 0.98rem; color: #666; font-style: italic;}
+    ul, ol {margin: 8px 0 0 1.2rem;}
+    li {margin-bottom: 6px;}
+    .projects-list {margin-bottom: 0;}
+    .skills-list, .cert-list, .softskills-list {columns: 2;}
+    .highlight {font-weight: bold; color: #1669aa;}
+    .edu-block {margin-bottom: 1.2rem;}
+    @media (max-width: 600px) {
+      body {padding: 8px;}
+      .skills-list, .cert-list, .softskills-list {columns: 1;}
     }
-    .job-title {
-      font-style: italic;
-      font-size: 0.95rem;
-    }
-    .company {
-      font-weight: bold;
-    }
-    a { color: #007acc; text-decoration: none; }
   </style>
 </head>
 <body>
-  <h1>Mohit Khubele</h1>
-  <p class="location">Chhindwara, Madhya Pradesh, India</p>
-  <p class="contact">📧 <a href="mailto:mohitkhubele95@gmail.com">mohitkhubele95@gmail.com</a> | 📞 +91-8989407111</p>
-  <p>🔗 <a href="https://linkedin.com/in/mohit-khubele-9331b1109" target="_blank">LinkedIn Profile</a></p>
+  <header>
+    <h1>Mohit Khubele</h1>
+    <div class="subtitle">Associate Data Consultant | Data Scientist</div>
+    <div class="location">Chhindwara, Madhya Pradesh, India</div>
+    <div class="contact">📞 +91-8989407111 | 📧 <a href="mailto:mohitkhubele95@gmail.com">mohitkhubele95@gmail.com</a></div>
+    <div class="linkedin">🔗 <a href="https://linkedin.com/in/mohit-khubele-9331b1109" target="_blank">linkedin.com/in/mohit-khubele-9331b1109</a></div>
+  </header>
 
-  <div class="section">
+  <section class="section">
     <h2>Profile</h2>
-    <p>Results-driven Data Scientist with 6+ years of experience delivering end-to-end AI/ML solutions, with a strong focus on LLMs, NLP, document intelligence, and computer vision. Demonstrated ability to lead large teams and deliver production-scale systems using Python, cloud platforms, and ML frameworks.</p>
-  </div>
+    <p>
+      Results-driven Data Scientist with 6+ years of experience delivering end-to-end AI/ML solutions, specializing in LLMs, NLP, document intelligence, and computer vision. Proven ability to lead large teams and deliver production-scale systems across multiple domains using Python, cloud platforms, and advanced ML frameworks.
+    </p>
+  </section>
 
-  <div class="section">
+  <section class="section">
     <h2>Experience</h2>
-    <p class="company">Hexalytics, Remote (USA) <span class="job-title">– Associate Data Consultant (Aug 2024 – Present)</span></p>
-    <ul>
-      <li>RFP Report Generation using LLMs</li>
-      <li>Document Chatbot with CAG/RAG & Qdrant</li>
-      <li>Property Finder Backend (Python, AWS ECS)</li>
-    </ul>
+    <div class="role-block">
+      <div class="job-title">Associate Data Consultant</div>
+      <div class="job-company">Hexalytics (Remote, Headquater Lewisville, Texas, USA)</div>
+      <div class="job-duration">Aug 2024 – Present</div>
+      <ul>
+        <li><span class="highlight">RFP Report Generation using LLM:</span> Developed an automated system for generating RFP reports, leveraging Large Language Models to extract and structure content from complex documents. Designed an agent-based architecture for modular, efficient task assignment and client-specific customization.</li>
+        <li><span class="highlight">RFP Document Chatbot (CAG & RAG, Qdrant):</span> Designed and deployed an advanced chatbot platform to answer questions from over 77,000 unique document types, using Context-Aware Generation (CAG) and Retrieval-Augmented Generation (RAG) with Qdrant vector database.</li>
+        <li><span class="highlight">Property Finder Backend Project (Python, MySQL, AWS ECS):</span> Engineered a robust backend for a property finder platform with multi-entity linking and secure data storage. Led production deployment with Docker on AWS ECS for high availability and scalability.</li>
+        <li><span class="highlight">Tech Stack:</span> Python, MySQL, AWS ECS, Docker, Qdrant, LLMs, NLP, RAG/CAG, Document Automation, Microservices</li>
+      </ul>
+    </div>
+    <div class="role-block">
+      <div class="job-title">Team Lead</div>
+      <div class="job-company">Green Rider Technology, Indore, India</div>
+      <div class="job-duration">Jun 2024 – Aug 2024</div>
+      <ul>
+        <li>Managed a cross-functional team of 85 professionals in fine-tuning and deploying large language models (LLMs) for enterprise use cases.</li>
+        <li>Oversaw the full LLM lifecycle: data collection, cleaning, model training, evaluation, and cloud deployment.</li>
+        <li>Spearheaded a robust RAG-based chatbot for PDF documentation, enabling fast, accurate contextual retrieval and response generation from complex corpora.</li>
+        <li>Collaborated with product managers and engineers to deliver AI products meeting business and compliance goals.</li>
+        <li><span class="highlight">Tech Stack:</span> Python, RAG, LLMs, NLP, Azure, AWS, Vector Databases, Docker, PDF Document Analytics</li>
+      </ul>
+    </div>
+    <div class="role-block">
+      <div class="job-title">Data Scientist</div>
+      <div class="job-company">Dimensionless Technology, Mumbai, India</div>
+      <div class="job-duration">May 2021 – May 2024</div>
+      <ul>
+        <li><span class="highlight">Tender Automation Tool (RAG-based Chatbot):</span> Developed a chatbot leveraging Retrieval-Augmented Generation (RAG) and OCR to answer client-specific queries on uploaded tenders. Built pipelines for PDF preprocessing, text extraction, semantic vectorization, and real-time similarity search.</li>
+        <li><span class="highlight">BaggageAI (Threat Detection):</span> Designed a real-time AI system for X-ray baggage scanners using YOLOv4/v7, CUDA, and TKDNN on NVIDIA Jetson devices. Achieved 97% recall, 98% mAP, and deployed Dockerized inference for scalable airport security.</li>
+        <li>Healthcare & Website Chatbots: Built and maintained document/data extraction bots and Q&A chatbots for healthcare and website data. Integrated NLP, OpenAI APIs, and Selenium for robust data processing.</li>
+        <li>Led multi-client project delivery from requirements through deployment, collaborating across data, software, and business teams.</li>
+        <li>Deployed models on AWS, Azure, and ARM edge devices (Jetson Orin).</li>
+        <li><span class="highlight">Tech Stack:</span> Python, OCR, NLP, OpenAI API, Qdrant, Azure, AWS, Jetson Orin, YOLO, TKDNN, TensorFlow, Selenium</li>
+      </ul>
+    </div>
+    <div class="role-block">
+      <div class="job-title">Junior Data Scientist</div>
+      <div class="job-company">Reorder Analytics, Coimbatore, India</div>
+      <div class="job-duration">May 2019 – Apr 2021</div>
+      <ul>
+        <li>Developed and optimized ML models for grocery/logistics AI, including object/barcode detection (YOLO, SSD), hand recognition, and tracking.</li>
+        <li>Automated annotation and data analytics toolkits (Tkinter, OpenCV) to enhance model development and training feedback.</li>
+        <li>Improved barcode reading pipelines (Pyzbar, Scandit) and implemented edge-optimized models for real-time use.</li>
+        <li>Supported end-to-end ML pipeline: data preprocessing, model training, evaluation, and product integration.</li>
+        <li><span class="highlight">Tech Stack:</span> Python, TensorFlow, YOLO, SSD, OpenCV, Pyzbar, Tkinter, Edge Devices</li>
+      </ul>
+    </div>
+  </section>
 
-    <p class="company">Green Rider Technology, Indore <span class="job-title">– Team Lead (Jun 2024 – Aug 2024)</span></p>
-    <ul>
-      <li>Managed 85-member AI team for LLM lifecycle</li>
-      <li>Built enterprise PDF chatbot using RAG</li>
-    </ul>
-
-    <p class="company">Dimensionless Technology, Mumbai <span class="job-title">– Data Scientist (May 2021 – May 2024)</span></p>
-    <ul>
-      <li>Tender Automation Chatbot using OCR + RAG</li>
-      <li>BaggageAI for real-time X-ray threat detection</li>
-      <li>Healthcare/Website Chatbots (OpenAI APIs)</li>
-    </ul>
-
-    <p class="company">Reorder Analytics, Coimbatore <span class="job-title">– Junior Data Scientist (May 2019 – Apr 2021)</span></p>
-    <ul>
-      <li>Barcode detection, annotation tools (OpenCV)</li>
-      <li>Real-time ML pipelines on edge devices</li>
-    </ul>
-  </div>
-
-  <div class="section">
+  <section class="section">
     <h2>Skills</h2>
-    <ul>
-      <li>Languages: Python, C++, JavaScript, SQL</li>
-      <li>AI/ML: LLMs, NLP, OCR, Computer Vision (YOLO)</li>
-      <li>DevOps & Cloud: Docker, AWS, Azure, Qdrant</li>
-      <li>Tools: Jetson Orin, Microservices, OpenAI API</li>
+    <ul class="skills-list">
+      <li>Programming: Python, C++, JavaScript (React, basic), SQL</li>
+      <li>AI/ML: LLMs, NLP, OCR, RAG/CAG, Computer Vision (YOLO, EfficientNet, SSD)</li>
+      <li>DevOps & Cloud: Docker, AWS ECS, Azure, Qdrant, Jetson Orin, Microservices</li>
+      <li>Other: Data Extraction, API Integration, Prompt Engineering, Vector Databases</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="section">
+  <section class="section">
     <h2>Education</h2>
-    <p>B.E. in Mechanical Engineering – LNCT Bhopal (2013–2017), 6.9 CGPA</p>
-  </div>
+    <div class="edu-block">
+      <strong>B.E. in Mechanical Engineering</strong><br/>
+      LNCT Bhopal<br/>
+      2013–2017 (6.9 CGPA)
+    </div>
+  </section>
 
-  <div class="section">
+  <section class="section">
+    <h2>Project Highlights</h2>
+    <ol class="projects-list">
+      <li><span class="highlight">RFP Automation (Hexalytics):</span> Modular LLM pipeline for RFP extraction and report generation using agent-based microservices.</li>
+      <li><span class="highlight">77,000-Type Document Chatbot (Hexalytics):</span> Vector DB-powered, context-driven document Q&A at scale.</li>
+      <li><span class="highlight">Property Finder Backend (Hexalytics):</span> Production backend for multi-entity property platform using Docker & AWS ECS.</li>
+      <li><span class="highlight">Enterprise PDF Chatbot (Green Rider):</span> PDF search & retrieval chatbot using advanced RAG for enterprise documentation.</li>
+      <li><span class="highlight">Tender Automation (Dimensionless):</span> End-to-end tender Q&A chatbot for clients using OCR, NLP, and vector retrieval.</li>
+      <li><span class="highlight">BaggageAI (Dimensionless):</span> Patent-pending, real-time X-ray threat detection with edge optimization.</li>
+      <li><span class="highlight">Threat Detection (Dimensionless):</span> Object detection on Jetson Orin for UAV/UGV, including model deployment & telemetry.</li>
+      <li><span class="highlight">Logistics AI (Reorder):</span> Barcode & hand detection models for edge, annotation tools for ML lifecycle.</li>
+    </ol>
+  </section>
+
+  <section class="section">
     <h2>Certifications</h2>
-    <ul>
-      <li>Artificial Intelligence – Hyderabad School of AI</li>
-      <li>Python for Data Science – Edureka</li>
+    <ul class="cert-list">
+      <li>Artificial Intelligence, Hyderabad School of AI</li>
+      <li>Python for Data Science, Edureka</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="section">
+  <section class="section">
     <h2>Soft Skills</h2>
-    <ul>
-      <li>Team Leadership, Communication, Fast Learner, Collaboration</li>
+    <ul class="softskills-list">
+      <li>Team Leadership</li>
+      <li>Analytical Thinking</li>
+      <li>Communication</li>
+      <li>Cross-functional Collaboration</li>
+      <li>Quick Learner</li>
     </ul>
-  </div>
+  </section>
+
 </body>
 </html>
